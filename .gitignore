@@ -68,6 +68,5 @@ Testing/
 .cache/
 /.vs
 /cpp_3d/x64
-/packages/raylib.5.5.0
 /EngineCore/x64
 /Template_cpp_3d/x64
