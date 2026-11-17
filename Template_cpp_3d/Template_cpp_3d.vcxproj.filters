@@ -14,9 +14,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="gameTemplate.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
@@ -43,5 +40,8 @@
     <ClInclude Include="..\cpp_3d\src\Entities\player.h">
       <Filter>Archivos de origen</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
 </Project>

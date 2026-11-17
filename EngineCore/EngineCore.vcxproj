@@ -117,8 +117,10 @@
       <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(SolutionDir)EngineCore\src\Engine;$(SolutionDir)EngineCore\src\Entities;$(SolutionDir)cpp_3d\src\Engine;$(SolutionDir)cpp_3d\src\Entities;$(SolutionDir)cpp_3d\external\lua\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
     </ClCompile>
     <Link>
       <SubSystem>
@@ -140,7 +142,7 @@
       <LanguageStandard>stdcpp20</LanguageStandard>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>C:\Users\jenge\source\repos\cpp_3d\cpp_3d\src\Engine;C:\Users\jenge\source\repos\cpp_3d\cpp_3d\src\Entities;C:\Users\jenge\source\repos\cpp_3d\cpp_3d\external\lua\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)EngineCore\src\Engine;$(SolutionDir)EngineCore\src\Entities;$(SolutionDir)cpp_3d\src\Engine;$(SolutionDir)cpp_3d\src\Entities;$(SolutionDir)cpp_3d\external\lua\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>
@@ -156,15 +158,15 @@
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="src\Engine\cameraGame.cpp" />
     <ClCompile Include="src\Engine\debug.cpp" />
     <ClCompile Include="src\Engine\scripting.cpp" />
     <ClCompile Include="src\Entities\coin.cpp" />
     <ClCompile Include="src\Entities\enemy.cpp" />
     <ClCompile Include="src\Entities\player.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -111,13 +111,13 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
-      <AdditionalIncludeDirectories>$(ProjectDir)external\lua\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)cpp_3d\external\lua\include;$(SolutionDir)cpp_3d\src\Entities;$(SolutionDir)cpp_3d\src\Engine;$(SolutionDir)EngineCore\src\Entities;$(SolutionDir)EngineCore\src\Engine</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Users\jenge\source\repos\cpp_3d\Template_cpp_3d\external\lua\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>raylib.lib;lua55.lib;winmm.lib;opengl32.lib;gdi32.lib;user32.lib;kernel32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)packages\raylib.5.5.0\build\native\lib\x64;$(SolutionDir)Template_cpp_3d\external\lua\lib;$(SolutionDir)$(Platform)\$(Configuration)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>raylib.lib;lua55.lib;EngineCore.lib;winmm.lib;opengl32.lib;gdi32.lib;user32.lib;kernel32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <Manifest>
       <EnableSegmentHeap>true</EnableSegmentHeap>
@@ -132,12 +132,12 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
-      <AdditionalIncludeDirectories>C:\Users\jenge\source\repos\cpp_3d\cpp_3d\src\Engine;C:\Users\jenge\source\repos\cpp_3d\Template_cpp_3d\external\lua\include;C:\Users\jenge\source\repos\cpp_3d\cpp_3d\src\Entities;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)cpp_3d\external\lua\include;$(SolutionDir)EngineCore\src\Engine;$(SolutionDir)EngineCore\src\Entities;$(SolutionDir)cpp_3d\src\Engine;$(SolutionDir)cpp_3d\src\Entities;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Users\jenge\source\repos\cpp_3d\Template_cpp_3d\external\lua\lib;C:\Users\jenge\source\repos\cpp_3d\x64\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)packages\raylib.5.5.0\build\native\lib\x64;$(SolutionDir)Template_cpp_3d\external\lua\lib;$(SolutionDir)$(Platform)\$(Configuration)</AdditionalLibraryDirectories>
       <AdditionalDependencies>lua55.lib;EngineCore.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <Manifest>

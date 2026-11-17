@@ -112,7 +112,8 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
-      <AdditionalIncludeDirectories>$(ProjectDir)src;$(ProjectDir)src\Engine;$(ProjectDir)src\Entities;$(ProjectDir)src\UI;$(ProjectDir)external\lua\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)EngineCore\src\Engine;$(SolutionDir)EngineCore\src\Entities;$(SolutionDir)cpp_3d\src\Engine;$(SolutionDir)cpp_3d\src\Entities;$(SolutionDir)cpp_3d\external\lua\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -133,7 +134,7 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
-      <AdditionalIncludeDirectories>C:\Users\jenge\source\repos\cpp_3d\cpp_3d\src\Engine;C:\Users\jenge\source\repos\cpp_3d\cpp_3d\src\Entities;C:\Users\jenge\source\repos\cpp_3d\cpp_3d\external\lua\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)EngineCore\src\Engine;$(SolutionDir)EngineCore\src\Entities;$(SolutionDir)cpp_3d\src\Engine;$(SolutionDir)cpp_3d\src\Entities;$(SolutionDir)cpp_3d\external\lua\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -146,9 +147,6 @@
     </Manifest>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="src\main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -159,6 +157,14 @@
     <ClInclude Include="src\Entities\coin.h" />
     <ClInclude Include="src\Entities\enemy.h" />
     <ClInclude Include="src\Entities\player.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EngineCore\EngineCore.vcxproj">
+      <Project>{fccd993f-5a2b-44a1-ac28-13c079855cc0}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
