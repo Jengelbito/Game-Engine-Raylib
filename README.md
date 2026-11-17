@@ -1,6 +1,3 @@
-# Game-Engine-Raylib
-A game engine made in C++ with Raylib library
-
 # 3D Game Engine (Raylib & Lua)
 
 A lightweight, modular 3D game engine and scene editor built in **C++20** using **Raylib 5.5** and **Lua 5.5** scripting. It features an integrated in-engine script editor, real-time debugging tools, and a standalone project export pipeline (.exe).
