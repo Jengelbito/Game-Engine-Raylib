@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Archivos de origen">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Archivos de encabezado">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Archivos de recursos">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Archivos de origen\Entities">
+      <UniqueIdentifier>{efb49e11-6f34-4dce-8ba8-12a5dd6bbab5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de origen\UI">
+      <UniqueIdentifier>{2edea1bb-5e54-462f-82cc-79afebab420d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de origen\Resources">
+      <UniqueIdentifier>{b44967e9-3e45-4b35-aaad-90e3730e9062}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de origen\Engine">
+      <UniqueIdentifier>{81d45514-b7a1-4a28-9fba-0c4529b86fdc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Engine\cameraGame.h">
+      <Filter>Archivos de origen\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\debug.h">
+      <Filter>Archivos de origen\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\editor_types.h">
+      <Filter>Archivos de origen\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\scripting.h">
+      <Filter>Archivos de origen\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Entities\coin.h">
+      <Filter>Archivos de origen\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Entities\enemy.h">
+      <Filter>Archivos de origen\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Entities\player.h">
+      <Filter>Archivos de origen\Entities</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

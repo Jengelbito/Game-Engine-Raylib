@@ -1,0 +1,13 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="cpp_3d/cpp_3d.vcxproj" Id="47dea100-e857-45c2-b99f-b08b78cb191e">
+    <BuildDependency Project="EngineCore/EngineCore.vcxproj" />
+  </Project>
+  <Project Path="EngineCore/EngineCore.vcxproj" Id="fccd993f-5a2b-44a1-ac28-13c079855cc0" />
+  <Project Path="Template_cpp_3d/Template_cpp_3d.vcxproj" Id="c4155308-8d80-4ce9-a24d-00caf5927b6a">
+    <BuildDependency Project="EngineCore/EngineCore.vcxproj" />
+  </Project>
+</Solution>
